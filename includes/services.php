@@ -1,5 +1,7 @@
-    <section id="services">
+    <section id="services" >
       <div class="container">
+            <div class = "overlay">
+
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Welcome to CashTrack</h2>
@@ -51,7 +53,7 @@
           </div>
         </div>
         
-        
+         </div>
       </div>
     </section>
  

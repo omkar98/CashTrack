@@ -20,14 +20,6 @@ include "includes/series.php";
 <?php 
 include "includes/timeline.php";
 ?>
-    <!-- Team -->
-<?php 
-include "includes/team.php";
-?>
-    <!-- Contact -->
-<?php 
-include "includes/contact_us_section.php";
-?>
 <!-- Footer -->
 <?php 
 include "includes/footer.php";

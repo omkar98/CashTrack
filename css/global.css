@@ -1,3 +1,14 @@
+#services {
+    background-position: 50% 50%;
+    background: url(../img/blockchain.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#services .overlay{
+    background: rgba(0,0,0,0.5);
+    padding:30px 0px 30px 0px;
+}
+
 .progress{
     width: 150px;
     height: 150px;

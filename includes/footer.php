@@ -38,10 +38,7 @@
       </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-<?php 
-include "portfolio_modals.php";
-?>
+
     
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

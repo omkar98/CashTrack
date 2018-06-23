@@ -21,27 +21,34 @@ while($row_cat)
                 <span class="progress-right">
                     <span class="progress-bar"></span>
                 </span>
-                <div class="progress-value">$292.5 M</div>
+                <div class="progress-value">
+                <?php
+                    $query = "SELECT * FROM investments WHERE category = '$selected_category'";
+                    $all_data = mysqli_query($connection, $query);
+                    if(!$all_data)
+                    {
+                    die('Query Failed'.mysqli_error($connection));
+                    }
+
+                    $row_invest = mysqli_fetch_assoc($all_data);
+                    $count = 0;
+                    $sum = 0;
+                    if($row_invest)
+                    {
+                        while($row_invest)
+                        {
+                            $sum = $sum + $row_invest['raised'];
+                            $row_invest = mysqli_fetch_assoc($all_data);
+                            $count++;
+                        }
+                    }
+                    echo "$" . " ". $sum . " " . "M";
+                  ?>
+                
+                </div>
             </div>
             <h4 style="text-align: center;">
 <?php
-$query = "SELECT * FROM investments WHERE category = '$selected_category'";
-$all_data = mysqli_query($connection, $query);
-if(!$all_data)
-{
-die('Query Failed'.mysqli_error($connection));
-}
-
-$row_invest = mysqli_fetch_assoc($all_data);
-$count = 0;
-if($row_invest)
-{
-    while($row_invest)
-    {
-        $row_invest = mysqli_fetch_assoc($all_data);
-        $count++;
-    }
-}
     echo $count." ";
 ?>
 <?php 
