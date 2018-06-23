@@ -12,6 +12,10 @@ include "includes/services.php";
 <?php 
 include "includes/circular_progress_bar.php";
 ?> 
+<!-- Series -->
+   <?php 
+include "includes/series.php";
+?>
     <!-- About -->
 <?php 
 include "includes/timeline.php";
