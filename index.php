@@ -50,7 +50,7 @@ include "includes/header.php";
 						</div>
 					</div>           
 
-					<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+					<h3 class="section-subheading text-muted">CashTrack is an automatic expense tracker for professionals. See expenditure across all your bank accounts.</h3>
 
 				</div>
 			</div>
