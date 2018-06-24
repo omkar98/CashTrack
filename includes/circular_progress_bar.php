@@ -1,5 +1,10 @@
- <section id="charts">
+ 
+  <br><br><br>
+  <section id="charts">
+  
    <div class="container">
+	   <h2 class = "text-center">INVESTMENTS: <span style = "color:dodgerblue;">  CATEGORY-WISE</span></h2>
+	   <hr>
     <div class="row">
         <?php
         $query_cat = "SELECT * FROM categories";
@@ -14,7 +19,8 @@
             $selected_category = $row_cat['cat_title'];
         ?>
         
-        <div class="col-md-3 col-sm-6" > 
+        <div class="col-md-3 col-sm-6 text-center"> 
+          <div class = "progress-box">
            <?php
                 $query = "SELECT * FROM investments WHERE category = '$selected_category'";
                 $all_data = mysqli_query($connection, $query);
@@ -55,8 +61,10 @@
                     <div class="value-bar"></div>
                 </div>
             </div>
-            <h4 style="text-align: center;"><?php echo $count." " . $selected_category; ?></h4>
+            <br>
+            <h6 style="text-align: center;"><?php echo $count." " . $selected_category; ?></h6>
         </div> 
+		</div>
         <?php 
             $row_cat = mysqli_fetch_assoc($all_categories);
         }

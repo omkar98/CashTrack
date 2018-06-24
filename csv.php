@@ -31,7 +31,7 @@ class csv extends mysqli
                $this->state_csv = false;
                 echo $this->error;
             }
-            echo "File Submitted Successfully!";
+            
             $row = fgetcsv($file);
         }
     }

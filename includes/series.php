@@ -1,4 +1,11 @@
-<div class="container">
+<br><br>
+ 	   <section id = "series" style = "padding:35px 0px 35px 0px;background-color:whitesmoke;text-align:center;">
+  	   <div class="container">
+   	   <h2 class = "text-center">INVESTMENTS: <span style = "color:dodgerblue;">  SERIES-WISE</span></h2>
+   	   
+   	   <hr>
+   	   <br><br>
+
     <div class="row">
        <?php 
             $query_series = "SELECT * FROM series";
@@ -44,3 +51,4 @@
         ?>
      </div>
 </div>
+</section>

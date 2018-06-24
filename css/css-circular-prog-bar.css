@@ -1,13 +1,14 @@
 .progress-circle {
-   font-size: 20px;
-   margin: 20px;
-   position: relative; /* so that children can be absolutely positioned */
-   padding: 0;
-   width: 5em;
-   height: 5em;
-   background-color: #F2E9E1; 
-   border-radius: 50%;
-   line-height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    position: relative;
+    padding: 0;
+    width: 5em;
+    height: 5em;
+    background-color: #F2E9E1;
+    border-radius: 50%;
+    line-height: 5em;
 }
 
 .progress-circle:after{

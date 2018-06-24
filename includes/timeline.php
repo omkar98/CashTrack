@@ -1,9 +1,11 @@
- <section id="about">
+ <section id="timeline">
       <div class="container">
+       <br><br>
+        <h2 class = "text-center">INVESTMENTS: <span style = "color:dodgerblue;"> TIMELINE</span></h2>
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Investments - Timeline</h2>
             <h3 class="section-subheading text-muted">Week, June-18</h3>
+            <br><br>
           </div>
         </div>
         <?php
@@ -46,9 +48,9 @@
                     <h4 class="subheading" style="color: #FF8562;"><?php echo $name; ?></h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted" style="font-family: Roboto; font-weight: 600"><?php echo $category; ?></p>
-                    <p style="font-family: Roboto; font-weight: 300"><?php echo $series . " " . "$" . $funds . "M" . " ". $investors . " "; ?></p>
-                    <p style="font-family: Roboto; font-weight: 300; font-size: 18px;">One platform for backup, files, objects, test/dev, and analytics </p> 
+                    <p style=" font-weight: 600"><?php echo $category; ?></p>
+                    <p style=" font-weight: 300"><?php echo $series . " " . "$" . $funds . "M" . " ". $investors . " "; ?></p>
+                    <p style=" font-weight: 300; font-size: 18px;">One platform for backup, files, objects, test/dev, and analytics </p> 
                   </div>
                 </div>
               </li>
@@ -68,9 +70,9 @@
                     <h4 class="subheading" style="color: #FF8562;"><?php echo $name; ?></h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted" style="font-family: Roboto; font-weight: 600"><?php echo $category; ?></p>
-                    <p style="font-family: Roboto; font-weight: 300"><?php echo $series . " " . "$" . $funds . "M" . " ". $investors . " "; ?></p>
-                    <p style="font-family: Roboto; font-weight: 300; font-size: 18px;">One platform for backup, files, objects, test/dev, and analytics </p> 
+                    <p style=" font-weight: 600"><?php echo $category; ?></p>
+                    <p style=" font-weight: 300"><?php echo $series . " " . "$" . $funds . "M" . " ". $investors . " "; ?></p>
+                    <p style=" font-weight: 300; font-size: 18px;">One platform for backup, files, objects, test/dev, and analytics </p> 
                   </div>
                 </div>
               </li>

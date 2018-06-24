@@ -1,85 +1,49 @@
+<br><br><br><br>
+<section id="front_view" >
+	<div class = "overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<br><br>
+					<h2 class="section-heading text-uppercase">Welcome to <b>CASHTRACK</b></span></h2>
+				</div>
+			</div>
+			<?php
+			$query = "SELECT * FROM investments";
+			$all_data = mysqli_query($connection, $query);
+			if(!$all_data)
+			{
+				die('Query Failed'.mysqli_error($connection));
+			}
 
-     
+			$row_invest = mysqli_fetch_assoc($all_data);
+			$count = 0;
+			$raised = 0;
+			while($row_invest)
+			{
+				$raised = $raised + $row_invest['raised'];
+				$row_invest = mysqli_fetch_assoc($all_data);
+				$count++;
+			}
+			?>
+			<div class="row text-center">
+				<div class="col-md-4">
 
-         
-    <section id="front_view" >
-      <div class="container">
-            <div class = "overlay">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Welcome to CashTrack</h2>
-            
-<?php 
+					<h1 class='service-heading' style = "color:dodgerblue;"><b><?php echo $count ?></b></h1>
+					<h4>Startups</h4>
+				</div>
+				<div class="col-md-4">
 
-?>
-            
-             
-             
-<?php
-include "csv.php";
-$csv = new csv();
-if(isset($_POST['submit']))
-{
- $csv->import($_FILES['file']['tmp_name']);
-}
-?>
-              
-              
-            <form method="post" action="" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit" name="submit" value="Import">
-            </form>            
-                        
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            
-          </div>
-        </div>
-        <?php
-        $query = "SELECT * FROM investments";
-        $all_data = mysqli_query($connection, $query);
-        if(!$all_data)
-        {
-            die('Query Failed'.mysqli_error($connection));
-        }
-          
-          $row_invest = mysqli_fetch_assoc($all_data);
-          $count = 0;
-          $raised = 0;
-          while($row_invest)
-          {
-            $raised = $raised + $row_invest['raised'];
-            $row_invest = mysqli_fetch_assoc($all_data);
-            $count++;
-          }
-        ?>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-                <h4 class='service-heading'><?php echo $count ?></h4>
-            <p class="text-muted">startups</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">$<?php echo $raised ?> mil</h4>
-            <p class="text-muted">Raised</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">5</h4>
-            <p class="text-muted">M&amp;A</p>
-          </div>
-        </div>
-        
-         </div>
-      </div>
-    </section>
- 
+					<h1 class="service-heading" style = "color:dodgerblue;"><b>$<?php echo $raised ?> mil</b></h1>
+					<h4>Raised</h4>				</div>
+				<div class="col-md-4">
+
+					<h1 class="service-heading" style = "color:dodgerblue;"><b>5</b></h1>
+					<h4>M&amp;A</h4>
+				</div>
+			</div>
+			<br><br><br>
+
+		</div>
+	</div>
+</section>

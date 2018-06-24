@@ -4,8 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 body {
-  overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat';
 }
 
 p {
@@ -13,7 +12,7 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: dodgerblue;
 }
 
 a:hover {
@@ -21,7 +20,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: dodgerblue !important;
 }
 
 h1,
@@ -30,13 +29,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-section {
+/*section {
   padding: 100px 0;
-}
+}*/
 
 section h2.section-heading {
   font-size: 40px;
@@ -54,9 +53,9 @@ section h3.section-subheading {
 }
 
 @media (min-width: 768px) {
-  section {
+  /*section {
     padding: 150px 0;
-  }
+  }*/
 }
 
 .btn {
@@ -70,8 +69,8 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: dodgerblue;
+  border-color: dodgerblue;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -85,12 +84,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: dodgerblue;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: dodgerblue;
   text-shadow: none;
 }
 
@@ -113,12 +112,12 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: dodgerblue;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: dodgerblue;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
@@ -136,7 +135,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: dodgerblue;
 }
 
 @media (min-width: 992px) {
@@ -147,7 +146,7 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #303443;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -229,165 +228,7 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
-#portfolio .portfolio-item {
-  right: 0;
-  margin: 0 0 15px;
-}
 
-#portfolio .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
-  max-width: 400px;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 20px;
-  margin-top: -12px;
-  text-align: center;
-  color: white;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 25px;
-  text-align: center;
-  background-color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-caption h4 {
-  margin: 0;
-  text-transform: none;
-}
-
-#portfolio .portfolio-item .portfolio-caption p {
-  font-size: 16px;
-  font-style: italic;
-  margin: 0;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#portfolio * {
-  z-index: 2;
-}
-
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
-
-.portfolio-modal {
-  padding-right: 0px !important;
-}
-
-.portfolio-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw;
-}
-
-.portfolio-modal .modal-content {
-  padding: 100px 0;
-  text-align: center;
-}
-
-.portfolio-modal .modal-content h2 {
-  font-size: 3em;
-  margin-bottom: 15px;
-}
-
-.portfolio-modal .modal-content p {
-  margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content p.item-intro {
-  font-size: 16px;
-  font-style: italic;
-  margin: 20px 0 30px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.portfolio-modal .modal-content ul.list-inline {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content button {
-  cursor: pointer;
-}
-
-.portfolio-modal .close-modal {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-
-.portfolio-modal .close-modal .lr {
-  /* Safari and Chrome */
-  z-index: 1051;
-  width: 1px;
-  height: 75px;
-  margin-left: 35px;
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #212529;
-}
-
-.portfolio-modal .close-modal .lr .rl {
-  /* Safari and Chrome */
-  z-index: 1052;
-  width: 1px;
-  height: 75px;
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  background-color: #212529;
-}
 
 .timeline {
   position: relative;
@@ -454,7 +295,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: dodgerblue;
 }
 
 .timeline > li .timeline-image h4 {
@@ -568,6 +409,7 @@ header.masthead .intro-text .intro-heading {
     margin-left: -85px;
   }
   .timeline > li .timeline-image h4 {
+	  
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
@@ -625,7 +467,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: dodgerblue;
   box-shadow: none;
 }
 
@@ -695,5 +537,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: dodgerblue;
 }
