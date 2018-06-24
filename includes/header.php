@@ -23,7 +23,7 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
-
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -38,11 +38,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <li class="nav-item active">
+              <a class="nav-link js-scroll-trigger" href="#front_view">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#charts">Charts</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
