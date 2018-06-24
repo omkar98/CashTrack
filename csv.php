@@ -14,6 +14,7 @@ class csv extends mysqli
     {
         $file = fopen($file, 'r');
         $row = fgetcsv($file);
+        $row = fgetcsv($file);
         while($row)
         {
             date_default_timezone_set('UTC');
@@ -24,14 +25,13 @@ class csv extends mysqli
             if($this->query($query))
             {
                $this->state_csv = true;
-                echo "Imported File Successfully";
             }
             else
             {
                $this->state_csv = false;
                 echo $this->error;
             }
-            
+            echo "File Submitted Successfully!";
             $row = fgetcsv($file);
         }
     }

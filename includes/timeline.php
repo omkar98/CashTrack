@@ -7,13 +7,13 @@
           </div>
         </div>
         <?php
-        $query = "SELECT * FROM investments";
+          
+        $query = "SELECT * FROM investments ORDER by date";
         $all_data = mysqli_query($connection, $query);
         if(!$all_data)
         {
             die('Query Failed'.mysqli_error($connection));
         }
-          
           $row_invest = mysqli_fetch_assoc($all_data);
           $count = 1; 
           while($row_invest)
