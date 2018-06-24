@@ -1,3 +1,7 @@
+
+     
+
+         
     <section id="services" >
       <div class="container">
             <div class = "overlay">
@@ -5,7 +9,35 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Welcome to CashTrack</h2>
+            
+<?php 
+
+?>
+            
+             
+             
+<?php
+include "csv.php";
+$csv = new csv();
+if(isset($_POST['submit']))
+{
+ $csv->import($_FILES['file']['tmp_name']);
+}
+?>
+              
+              
+            <form method="post" action="" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" name="submit" value="Import">
+            </form>            
+            
+            
+            
+            
+            
+            
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            
           </div>
         </div>
         <?php
